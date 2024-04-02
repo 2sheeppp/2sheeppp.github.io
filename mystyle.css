@@ -23,7 +23,7 @@ canvas{
   height: 720px;
   position: absolute;
   left: 50%;
-  top: 700px;
+  top: 710px;
   transform: translate(-50%,-50%);
   border: 1px solid white;
   box-shadow: 0 0 1vw white,inset 0 0 1vw white;
