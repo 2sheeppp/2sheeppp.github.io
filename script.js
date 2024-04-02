@@ -92,8 +92,8 @@ canvas.addEventListener("click", function (evt) { //获取点击事件
       endGame()
       alert("恭喜你，"+ response +"!挑战成功！")
     }
-
-    // 在游戏结束时调用该函数，计算游戏所用时间并显示提示信息
+  
+// 计算游戏所用时间
 function endGame() {
     endTime = Date.now(); // 获取游戏结束时间
     var timeDiff = endTime - startTime; // 计算游戏所用时间差
@@ -105,10 +105,6 @@ function endGame() {
 // 点击显示所用时长按钮时，显示游戏所用时长
 document.getElementById("show-time-btn").addEventListener("click", function() {
     if (gameComplete) {
-        var timeDiff = endTime - startTime; // 计算游戏所用时间差
-        var seconds = Math.floor(timeDiff / 1000); // 转换成秒
-        var minutes = Math.floor(seconds / 60); // 分钟
-        var remainingSeconds = seconds % 60; // 剩余秒数
         alert("游戏所用时长为：" + minutes + "分钟" + remainingSeconds + "秒");
     } else {
         alert("游戏尚未结束，无法显示所用时长！");
@@ -122,7 +118,6 @@ document.getElementById("show-count-btn").addEventListener("click", function() {
   } else {
     alert("游戏尚未结束，无法显示点击次数！")
   }
-
   });
 
 });
