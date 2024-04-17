@@ -1,0 +1,36 @@
+{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #191919;
+}
+h1 {
+  color:#F2F2F2;
+  text-align:center;
+  font-size: 50px;
+  font-family: STCAIYUN,serif;
+}
+p{
+  color:#C99A5A;
+  text-align:center;
+  font-size: 20px;
+  font-family: STXIHEI,serif;
+}
+
+canvas{
+  width: 720px;
+  height: 720px;
+  position: absolute;
+  left: 50%;
+  top: 710px;
+  transform: translate(-50%,-50%);
+  border: 1px solid white;
+  box-shadow: 0 0 1vw white,inset 0 0 1vw white;
+}
+
+.container{
+  position: relative;
+  top: 780px;
+  text-align: center;
+}
