@@ -1,0 +1,32 @@
+/* 公共 */
+.content-li>h3 {
+ display: flex;
+ align-items: center;
+ color: var(--headerFont);
+}
+
+.content-li .borderbotm {
+ flex: 1;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+/* 第三段 */
+.li3-box {
+ position: relative;
+ max-height: 200px;
+ background-size: 100%;
+}
+
+
+.li3-box video {
+  width: 100%; /* 视频宽度为容器宽度的百分比 */
+  height: auto; /* 高度自动调整以保持比例 */
+}
+
+
+   /* 手机*/
+   @media screen and (max-width: 550px) {
+     .content-li{
+       display: block;
+     }

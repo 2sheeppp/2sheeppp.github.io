@@ -1,0 +1,71 @@
+/* 公共 */
+.content-li>h3 {
+ display: flex;
+ align-items: center;
+ color: var(--headerFont);
+}
+
+.content-li .borderbotm {
+ flex: 1;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+/* 第二块 */
+
+.li2-box {
+ /* width: 100%; */
+ min-height: 30px;
+ padding: 40px;
+ box-shadow: 0 2px 4px -2px rgb(0 0 0 / 15%);
+}
+
+.li2-box blockquote::after {
+ margin: 0;
+ width: 50px;
+ color: var(--mainColor);
+ line-height: 55px;
+ content: '"';
+ position: absolute;
+ bottom: -40px;
+ right: -25px;
+ font-size: 54px;
+}
+
+.li2-box blockquote::before {
+ margin: 0;
+ color: var(--mainColor);
+ width: 50px;
+ line-height: 55px;
+ content: '"';
+ position: absolute;
+ top: -25px;
+ left: -25px;
+ font-size: 54px;
+}
+
+.li2-box blockquote {
+ position: relative;
+ padding: 0;
+ margin: 0;
+ display: block;
+ color: var(--headerFont);
+ font-style: italic;
+ font-size: 16px;
+ font-weight: 500;
+}
+
+/* 第三段 */
+.li3-box {
+ position: relative;
+ min-height: 380px;
+ background-size: 100%;
+}
+
+
+
+   /* 手机*/
+   @media screen and (max-width: 550px) {
+     .content-li{
+       display: block;
+     }

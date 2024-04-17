@@ -1,0 +1,76 @@
+.boxitem-line{
+  padding: 30px 40px;
+}
+.boxitem-line h6{
+}
+.boxitem-line h6>span{
+  float: right;
+}
+.boxitem-line .propress{
+  height: 8px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.propress>span{
+    width: 0%;
+    transition: width 1s ease-in-out;
+    background-color: var(--mainColor);
+    display: inline-block;
+    height: 100%;
+    vertical-align: super;
+    border-radius: 10px;
+}
+
+
+h6{
+  margin: 10px 0px;
+}
+
+.li2-box{
+  /* min-height: 200px; */
+  padding: 30px 50px;
+  box-sizing: border-box;
+}
+.li2-box ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.li2-box li{
+  flex: 0 0 100%;
+  text-align: left;
+  height: 30px;
+  line-height:  30px;
+  position: relative;
+}
+.li2-box li:after{
+  position: absolute;
+    content: '';
+    left: -15px;
+    top: 9px;
+    width: 5px;
+    height: 5px;
+    /* background-color: aqua; */
+    border-radius: 50%;
+    border: 3px solid var(--mainColor);
+}
+
+ /* 手机*/
+ @media screen and (max-width: 550px) {
+  .content-li{
+    display: block;
+  }
+  .li1-box{
+    display: block;
+  }
+  .li2-box ul{
+    display: block;
+  }
+  .li3-box{
+    display: block;
+  }
+  .li2-box li{
+    width: 100%;
+  }
+}
